@@ -1,0 +1,104 @@
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+  }
+  
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.imgWrap{
+  background-image: url('../images/Podcast.jpg');
+  background-color: #cccccc; 
+    height: 800px;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+  background-attachment: fixed;
+  padding-top: 10px;
+  background-size: cover;
+}
+
+.videoGraph{
+  margin-left: 80px;
+}
+
+.youtubevideocss{
+  width: 560px;
+    height: 315px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.wrapper{
+  display: 'flex'
+}
+
+/* .imgAudi{
+  max-width:'50%'; 
+  height:'auto' ; 
+  display: 'flex'
+} */
+
+/* .loginWrapper{
+  width: '50%'; 
+  float: 'left'; 
+  position: 'relative';
+} */
+
+@media (max-width: 1000px) { 
+   .wrapper{
+    flex-direction: column;
+  }
+  .imgAudi{
+    max-width: 100% !important;
+  }
+  .loginWrapper{
+    width: auto !important;
+    max-width: 100% !important;
+  }
+  .youtubevideocss{
+    width: 360px;
+    height: 200px;
+  }
+}
+
+@media all and (orientation:landscape) {
+  .imgCss{
+    display: none !important;
+  };
+}
+
+@media (orientation:portrait) {
+  .imgCssM{
+    width: 100%;
+    height: auto;
+  };
+
+}
+
+/* @media all and (orientation:landscape) {
+  .youtubevideocss{
+    width: 360px;
+    height: 200px;
+  }
+
+} */
+
+.signup{
+  margin: 20px;
+  padding: 20px;
+  position: absolute !important;
+  top: 0;
+  right: 20px;
+}
+
+.signupbutton{
+  margin-top: 15px;
+}
